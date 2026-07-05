@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Siddhardha Kukkala | Portfolio</title>
+    <meta name="description" content="Portfolio of Sai Siddhardha Kukkala, a B.Tech Computer Science & Engineering student at VNIT Nagpur. Specializing in Software Engineering, Data Structures, Algorithms, and scalable software systems.">
+    <meta name="keywords" content="Sai Siddhardha Kukkala, Kukkala Sai Siddhardha, Portfolio, VNIT Nagpur, Computer Science Student, Software Engineer, C++, DSA, OOP, Systems">
+    <meta name="author" content="Kukkala Sai Siddhardha">
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Custom Premium Cursor -->
+    <div class="custom-cursor-dot" id="customCursorDot"></div>
+    <div class="custom-cursor-circle" id="customCursorCircle"></div>
+
+    <!-- Liquid Glass Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-glass-morph">
+            <div class="morph-blob"></div>
+            <div class="preloader-text-wrapper">
+                <span class="preloader-title">SYSTEM</span>
+                <span class="preloader-subtitle">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+    <!-- Ambient Aurora Blobs -->
+    <div class="aurora-container">
+        <div class="aurora-blob aurora-1" id="aurora1"></div>
+        <div class="aurora-blob aurora-2" id="aurora2"></div>
+        <div class="aurora-blob aurora-3" id="aurora3"></div>
+    </div>
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Floating Glass Navigation Bar -->
+    <header class="header" id="mainHeader">
+        <nav class="nav-container">
+            <a href="#home" class="logo magnetic-element">
+                <span class="logo-accent">&lt;</span>SID<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <div class="nav-links-wrapper" id="navLinksWrapper">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <button class="hamburger-btn magnetic-element" id="hamburgerBtn" aria-label="Toggle Menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-layout">
+                    <div class="hero-content">
+                        <div class="badge-wrapper reveal">
+                            <span class="glass-badge">
+                                <span class="badge-dot"></span>
+                                Currently Seeking Internships
+                            </span>
+                        </div>
+                        <span class="hero-intro-label reveal">Hi, I'm</span>
+                        <h1 class="hero-name reveal">
+                            <span class="gradient-text name-main">Kukkala Sai Siddhardha</span>
+                        </h1>
+                        
+                        <div class="hero-tagline-wrapper reveal">
+                            <h2 class="hero-tagline-item">Build software.</h2>
+                            <h2 class="hero-tagline-item">Solve problems.</h2>
+                            <h2 class="hero-tagline-item font-accent">Keep learning.</h2>
+                        </div>
+                        
+                        <h3 class="hero-title reveal">
+                            I am a <span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span>
+                        </h3>
+                        
+                        <p class="hero-desc reveal">
+                            I am a third-year Computer Science and Engineering student at Visvesvaraya National Institute of Technology (VNIT), Nagpur. I enjoy designing efficient software solutions and strengthening my problem-solving skills through Data Structures and Algorithms. I am continuously exploring software development, computer science fundamentals, and modern technologies while looking for opportunities to contribute, learn, and grow as a software engineer.
+                        </p>
+                        
+                        <div class="hero-actions reveal">
+                            <a href="#projects" class="btn btn-primary magnetic-element btn-hover-effect">
+                                <span>Explore Projects</span>
+                                <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary magnetic-element btn-hover-effect">
+                                <span>Get In Touch</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual reveal">
+                        <div class="glass-interactive-node tilt-card">
+                            <div class="node-inner">
+                                <div class="node-glow"></div>
+                                <div class="node-circle circle-outer"></div>
+                                <div class="node-circle circle-mid"></div>
+                                <div class="node-circle circle-inner">
+                                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-down-hint">
+                <span class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span class="scroll-label">Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2 class="section-heading">About <span class="gradient-text">Me</span></h2>
+                
+                <div class="about-grid">
+                    <div class="glass-card about-card tilt-card reveal">
+                        <div class="card-glass-shine"></div>
+                        <div class="about-content">
+                            <h3 class="about-subtitle">Background & Objectives</h3>
+                            <p class="about-paragraph">
+                                I am currently pursuing my B.Tech in Computer Science and Engineering at Visvesvaraya National Institute of Technology (VNIT), Nagpur, maintaining a strong CGPA of <strong>8.57</strong>. My interests lie at the intersection of Data Structures and Algorithms, Software Development, and Object-Oriented Programming (OOP), with a particular focus on designing highly efficient systems. I enjoy solving challenging programming problems because they sharpen my logical thinking, help me analyze complexity, and ultimately enable me to write better, more performant software.
+                            </p>
+                            <p class="about-paragraph">
+                                Over the course of my studies, I have developed multiple academic projects using C and Python. Working on these applications has allowed me to apply theoretical knowledge to real-world scenarios, strengthening my grasp of modular programming principles, data structure utilization, and robust software design. I believe that engineering is not just about building functional code, but about writing clean, maintainable, and highly efficient systems that solve concrete problems.
+                            </p>
+                            <p class="about-paragraph">
+                                To prepare for a career in industry, I regularly practice algorithmic problem solving and actively expand my knowledge of databases, computer organization, discrete mathematics, and software engineering methodologies. I am eager to secure a Software Engineering internship role where I can work alongside experienced developers, learn industry best practices, and contribute my skills to build products that make a real difference.
+                            </p>
+                            
+                            <div class="about-stat-row">
+                                <div class="about-stat-item">
+                                    <span class="stat-num" data-target="8.57">0.00</span>
+                                    <span class="stat-desc">CGPA Academic Score</span>
+                                </div>
+                                <div class="about-stat-item">
+                                    <span class="stat-num" data-target="150">0</span>
+                                    <span class="stat-desc">LeetCode Problems Solved</span>
+                                </div>
+                                <div class="about-stat-item">
+                                    <span class="stat-num" data-target="9298">0</span>
+                                    <span class="stat-desc">JEE Main All India Rank</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section-padding">
+            <div class="container">
+                <h2 class="section-heading">Academic <span class="gradient-text">Timeline</span></h2>
+                
+                <div class="timeline-container">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-card-wrapper reveal">
+                        <div class="timeline-connector">
+                            <div class="connector-dot"></div>
+                            <div class="connector-line"></div>
+                        </div>
+                        <div class="glass-card timeline-card tilt-card">
+                            <div class="card-glass-shine"></div>
+                            <div class="timeline-header">
+                                <span class="timeline-period">2024 - Present</span>
+                                <h3 class="timeline-title">B.Tech in Computer Science</h3>
+                                <h4 class="timeline-school">Visvesvaraya National Institute of Technology (VNIT), Nagpur</h4>
+                            </div>
+                            <div class="timeline-details">
+                                <p>Deeply engaging with algorithmic programming, architecture design, and database systems. Focusing on robust problem-solving principles and advanced computing models.</p>
+                                <div class="timeline-meta">
+                                    <span class="meta-pill">CGPA: 8.57</span>
+                                    <span class="meta-pill">Graduation: May 2028</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-card-wrapper reveal">
+                        <div class="timeline-connector">
+                            <div class="connector-dot"></div>
+                            <div class="connector-line"></div>
+                        </div>
+                        <div class="glass-card timeline-card tilt-card">
+                            <div class="card-glass-shine"></div>
+                            <div class="timeline-header">
+                                <span class="timeline-period">Completed 2024</span>
+                                <h3 class="timeline-title">Higher Secondary Education</h3>
+                                <h4 class="timeline-school">Sri Chaitanya Junior College</h4>
+                            </div>
+                            <div class="timeline-details">
+                                <p>Specialized secondary education focusing heavily on Physics, Chemistry, and Advanced Mathematics.</p>
+                                <div class="timeline-meta">
+                                    <span class="meta-pill">Score: 98.6%</span>
+                                    <span class="meta-pill">PCM Stream</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-card-wrapper reveal">
+                        <div class="timeline-connector">
+                            <div class="connector-dot"></div>
+                        </div>
+                        <div class="glass-card timeline-card tilt-card">
+                            <div class="card-glass-shine"></div>
+                            <div class="timeline-header">
+                                <span class="timeline-period">Completed 2022</span>
+                                <h3 class="timeline-title">Secondary School Certificate</h3>
+                                <h4 class="timeline-school">Vasavi Ideal Public School</h4>
+                            </div>
+                            <div class="timeline-details">
+                                <p>Primary academic foundations with key focus on arithmetic, basic sciences, and logical analysis.</p>
+                                <div class="timeline-meta">
+                                    <span class="meta-pill">Score: 96.2%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <h2 class="section-heading">Tech <span class="gradient-text">Stack</span></h2>
+                
+                <div class="skills-wrapper">
+                    <!-- Languages -->
+                    <div class="glass-card skills-card reveal">
+                        <h3 class="skills-category-title">
+                            <svg class="skill-category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            Programming Languages
+                        </h3>
+                        <div class="capsules-container">
+                            <div class="skill-capsule magnetic-element"><span>C</span></div>
+                            <div class="skill-capsule magnetic-element"><span>C++</span></div>
+                            <div class="skill-capsule magnetic-element"><span>Python</span></div>
+                            <div class="skill-capsule magnetic-element"><span>HTML</span></div>
+                            <div class="skill-capsule magnetic-element"><span>CSS</span></div>
+                            <div class="skill-capsule magnetic-element"><span>JavaScript</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="glass-card skills-card reveal">
+                        <h3 class="skills-category-title">
+                            <svg class="skill-category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                            Databases
+                        </h3>
+                        <div class="capsules-container">
+                            <div class="skill-capsule magnetic-element"><span>MySQL</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Developer Tools -->
+                    <div class="glass-card skills-card reveal">
+                        <h3 class="skills-category-title">
+                            <svg class="skill-category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                            Developer Tools
+                        </h3>
+                        <div class="capsules-container">
+                            <div class="skill-capsule magnetic-element"><span>Git</span></div>
+                            <div class="skill-capsule magnetic-element"><span>GitHub</span></div>
+                            <div class="skill-capsule magnetic-element"><span>VS Code</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Coursework -->
+                    <div class="glass-card skills-card reveal">
+                        <h3 class="skills-category-title">
+                            <svg class="skill-category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                            Coursework
+                        </h3>
+                        <div class="capsules-container">
+                            <div class="skill-capsule magnetic-element"><span>Data Structures & Algorithms</span></div>
+                            <div class="skill-capsule magnetic-element"><span>Object-Oriented Programming</span></div>
+                            <div class="skill-capsule magnetic-element"><span>Computer Organization</span></div>
+                            <div class="skill-capsule magnetic-element"><span>Discrete Mathematics</span></div>
+                            <div class="skill-capsule magnetic-element"><span>Graph Theory</span></div>
+                            <div class="skill-capsule magnetic-element"><span>Probability & Statistics</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Areas of Interest -->
+                    <div class="glass-card skills-card reveal">
+                        <h3 class="skills-category-title">
+                            <svg class="skill-category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                            Areas of Interest
+                        </h3>
+                        <div class="capsules-container">
+                            <div class="skill-capsule magnetic-element"><span>Software Development</span></div>
+                            <div class="skill-capsule magnetic-element"><span>Problem Solving</span></div>
+                            <div class="skill-capsule magnetic-element"><span>Data Structures & Algorithms</span></div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <h2 class="section-heading">Featured <span class="gradient-text">Projects</span></h2>
+                
+                <div class="projects-grid-liquid">
+                    <!-- Project Card 1 -->
+                    <div class="glass-card project-liquid-card tilt-card reveal">
+                        <div class="card-glass-shine"></div>
+                        <div class="project-header">
+                            <span class="project-date">Academic Project</span>
+                            <h3 class="project-title">Travel Trip Planner and Navigation Management System</h3>
+                        </div>
+                        <p class="project-description">
+                            Developed a console-based travel planning system for managing destinations, routes, and itineraries. Implemented AVL Trees for efficient searching and Linked Lists for route management. Designed modular components that simplify itinerary updates and improve maintainability.
+                        </p>
+                        <div class="project-footer">
+                            <div class="project-tech">
+                                <span class="tech-pill">C</span>
+                                <span class="tech-pill">AVL Trees</span>
+                                <span class="tech-pill">Linked Lists</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/siddu-0111" target="_blank" class="project-icon-link magnetic-element" aria-label="GitHub Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="glass-card project-liquid-card tilt-card reveal">
+                        <div class="card-glass-shine"></div>
+                        <div class="project-header">
+                            <span class="project-date">Academic Project</span>
+                            <h3 class="project-title">Banking Management System</h3>
+                        </div>
+                        <p class="project-description">
+                            Developed a banking application featuring account creation, deposits, withdrawals, balance inquiry, fund transfers, secure authentication, and transaction history. Applied OOP principles to create reusable and maintainable code.
+                        </p>
+                        <div class="project-footer">
+                            <div class="project-tech">
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">Object-Oriented Programming</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/siddu-0111" target="_blank" class="project-icon-link magnetic-element" aria-label="GitHub Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="glass-card project-liquid-card tilt-card reveal">
+                        <div class="card-glass-shine"></div>
+                        <div class="project-header">
+                            <span class="project-date">Academic Project</span>
+                            <h3 class="project-title">Online Game Management System</h3>
+                        </div>
+                        <p class="project-description">
+                            Built a game management platform for handling player registration, gameplay records, score tracking, leaderboard generation, and prize allocation using modular programming techniques.
+                        </p>
+                        <div class="project-footer">
+                            <div class="project-tech">
+                                <span class="tech-pill">C</span>
+                                <span class="tech-pill">Structures</span>
+                                <span class="tech-pill">Arrays</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/siddu-0111" target="_blank" class="project-icon-link magnetic-element" aria-label="GitHub Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section section-padding">
+            <div class="container">
+                <h2 class="section-heading">Key <span class="gradient-text">Achievements</span></h2>
+                
+                <div class="achievements-grid-liquid">
+                    <!-- Achievement 1 -->
+                    <div class="glass-card achievement-liquid-card tilt-card reveal">
+                        <div class="card-glass-shine"></div>
+                        <div class="achievement-icon-box">
+                            <svg class="achievement-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        </div>
+                        <h3 class="achievement-title">150+ LeetCode Solved</h3>
+                        <p class="achievement-details">Consistently resolving algorithmic problems covering tree traversals, dynamic programming, arrays, and graph configurations.</p>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="glass-card achievement-liquid-card tilt-card reveal">
+                        <div class="card-glass-shine"></div>
+                        <div class="achievement-icon-box">
+                            <svg class="achievement-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                        </div>
+                        <h3 class="achievement-title">AIR 9298 in JEE Main</h3>
+                        <p class="achievement-details">Placed in the top 0.7% of 1.2+ million candidates nationwide in one of the most demanding engineering entrance examinations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <h2 class="section-heading">Get In <span class="gradient-text">Touch</span></h2>
+                
+                <div class="contact-layout-liquid">
+                    <!-- Info Panel -->
+                    <div class="glass-card contact-info-card tilt-card reveal">
+                        <div class="card-glass-shine"></div>
+                        <h3 class="contact-panel-title">Let's build something efficient.</h3>
+                        <p class="contact-panel-desc">Reach out if you are interested in discussing internship roles, core software systems, or algorithmic integrations.</p>
+                        
+                        <div class="contact-links-list">
+                            <div class="contact-link-item">
+                                <span class="contact-meta-label">Phone</span>
+                                <a href="tel:+919391401438" class="contact-meta-value magnetic-element">+91-9391401438</a>
+                            </div>
+                            <div class="contact-link-item">
+                                <span class="contact-meta-label">Email</span>
+                                <a href="mailto:siddhardha939@gmail.com" class="contact-meta-value magnetic-element">siddhardha939@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-social-row">
+                            <a href="https://github.com/siddu-0111" target="_blank" class="social-circle-btn magnetic-element" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="https://linkedin.com/in/sai-siddhardha-kukkala" target="_blank" class="social-circle-btn magnetic-element" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Form -->
+                    <div class="glass-card contact-form-card reveal">
+                        <form id="contactForm" class="liquid-form" autocomplete="off">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="formName" class="form-label">Name</label>
+                                    <div class="input-glow-wrapper">
+                                        <input type="text" id="formName" class="form-input" placeholder="Your name" required>
+                                        <span class="input-bottom-glow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="formEmail" class="form-label">Email</label>
+                                    <div class="input-glow-wrapper">
+                                        <input type="email" id="formEmail" class="form-input" placeholder="yourname@domain.com" required>
+                                        <span class="input-bottom-glow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="formMessage" class="form-label">Message</label>
+                                    <div class="input-glow-wrapper">
+                                        <textarea id="formMessage" class="form-input form-textarea" placeholder="Describe your project, timeline or role..." required></textarea>
+                                        <span class="input-bottom-glow"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit magnetic-element btn-hover-effect">
+                                <span>Send Message</span>
+                                <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Kukkala Sai Siddhardha. All Rights Reserved.</p>
+            <p class="credits">Built using HTML, CSS and JavaScript.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top magnetic-element" id="backToTop" aria-label="Back to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+    </button>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
